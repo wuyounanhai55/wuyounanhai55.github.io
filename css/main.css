@@ -274,7 +274,7 @@ h6 {
   }
 }
 p {
-  margin: 0 0 20px 0;
+  margin: 0;
 }
 a {
   color: #555;
@@ -2062,7 +2062,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cf42de;
+  background: #ff0a2d;
 }
 .links-of-blogroll {
   font-size: 13px;

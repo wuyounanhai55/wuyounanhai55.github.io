@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2F2018%2F12%2F12%2Ftest%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[css-summarize]]></title>
+    <url>%2F2018%2F12%2F13%2Fcss-summarize%2F</url>
+    <content type="text"><![CDATA[写在前面：本文目的在于记录平时用到的一些常用CSS样式，常见的问题，用于以后自己方便使用，备忘。同时也希望对停留在这里的人，提供一些帮助！如何消除inline-block产生的元素间空隙 12345&lt;div class=&quot;parent&quot;&gt; &lt;div class=&quot;children&quot;&gt;child&lt;/div&gt; &lt;div class=&quot;children&quot;&gt;child&lt;/div&gt; &lt;div class=&quot;children&quot;&gt;child&lt;/div&gt;&lt;/div&gt; 1.children &#123;display: inline-block;background: #ccc&#125; 运行结果： 空隙产生原因：HTML中的换行符、空格符、制表符等空白符，字体大小不为0的情况下，空白符占据一定宽度，使用inline-block会产生元素间的空隙 解决办法： 父元素设置font-size设置为0，子元素的font-size设置为实际大小 子元素设置浮动 把所有子元素写在一行 有时候子元素内容较长，所有子元素写在一行导致代码的可读性很差，这时候采用下面的写法（用HTML注释符把子元素连接起来）：12345&lt;div class=&quot;parent&quot;&gt; &lt;div class=&quot;children&quot;&gt;child&lt;/div&gt;&lt;!-- --&gt;&lt;div class=&quot;children&quot;&gt;child&lt;/div&gt;&lt;!-- --&gt;&lt;div class=&quot;children&quot;&gt;child&lt;/div&gt;&lt;/div&gt;]]></content>
+      <tags>
+        <tag>css</tag>
+        <tag>summarize</tag>
+      </tags>
   </entry>
 </search>
