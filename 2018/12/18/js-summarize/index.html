@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="summarize,javascript,">
+  <meta name="keywords" content="javascript,summarize,">
 
 
 
@@ -79,14 +79,14 @@
 
 
 
-<meta name="keywords" content="summarize,javascript">
+<meta name="keywords" content="javascript,summarize">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js-summarize">
 <meta property="og:url" content="https://wuyounanhai55.github.io/2018/12/18/js-summarize/index.html">
 <meta property="og:site_name" content="半先生的博客">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://wuyounanhai55.github.io/2018/12/18/js-summarize/javascript.jpg">
-<meta property="og:updated_time" content="2019-01-02T08:37:53.497Z">
+<meta property="og:updated_time" content="2019-01-10T01:20:20.503Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js-summarize">
 <meta name="twitter:image" content="https://wuyounanhai55.github.io/2018/12/18/js-summarize/javascript.jpg">
@@ -439,7 +439,7 @@
 <li>浏览器支持脚本，但被禁用</li>
 </ol>
 <p><strong> JavaScript将被从上到下依次执行,在所有代码求值完毕之前，页面中的其余内容都不会被浏览器加载显示，在不使用defer和async的情况下 </strong></p>
-<h5 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h5><p>　<strong> 1. 语法 </strong><br>　　1.1 区分大小写<br>　　　ECMAScript中的一切(变量、函数名和操作符)都区分大小写<br>　　1.2 标识符<br>　　　<strong> 标识符 </strong> 就是指变量、函数、属性的名字或者函数的参数。标识符规则如下<br>　　　　1 第一个字符必须是字母、下划线 或 $<br>　　　　2 其他字符可以是字母、数字、下划线 或 $<br>　　　按照惯例，ECMAScript采用驼峰大小写格式，也就是第一个字母小写，剩下的每个单词首字母大写，如：firstSecond myCar<br>　　1.3 注释<br>　　　// 单行注释<br>　　　/* 这是一行多行注释 */<br>　　1.4 严格模式<br>　　　ECMAScript5引入严格模式，严格模式是为JavaScript定义了一种不同的解析与执行模型。要在整个模式启用严格模式，可以在顶部添加如下代码：<br>　　　　“use strict”<br>　　1.5 语句<br>　　　ECMAScript中的语句以一个分号结尾；虽然语句的分号不是必需的，但建议任何时候都不要省略它。<br>　<strong> 2. 数据类型 </strong><br>　　ECMAScript中有五种基本操作类型: Number、String、Bollean、Null、Undefined，还有一种复杂的数据类型Object。ECMAScript不支持任何创建自定义类型的机制，所有值最终将是上述6中类型之一。<br>　　　2.1 typeof操作符<br>　　　  使用typeof检测数据类型，使用typeof操作符返回下列某个字符串：<br>　　　   1. “undefined”: 如果这个值未定义；<br>　　　   2. “bollean”: 如果这个值是布尔值；<br>　　　   3. “string”: 如果这个值是字符串；<br>　　　   4. “number”: 如果这个值是数字；<br>　　　   5. “object”: 如果这个值是对象或者null；<br>　　　   6. “function”: 如果这个值是函数<br>　　　2.2 Undefined类型<br>　　　　 在使用var声明变量但未对其初始化时,这个变量的值就是undefined,例如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> message; <span class="comment">//只定义了变量，未初始化变量</span></span><br><span class="line">alert(message === <span class="literal">undefined</span>) <span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
+<h5 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h5><p>　<strong> 1. 语法 </strong><br>　　1.1 区分大小写<br>　　　ECMAScript中的一切(变量、函数名和操作符)都区分大小写<br>　　1.2 标识符<br>　　　<strong> 标识符 </strong> 就是指变量、函数、属性的名字或者函数的参数。标识符规则如下<br>　　　　1 第一个字符必须是字母、下划线 或 $<br>　　　　2 其他字符可以是字母、数字、下划线 或 $<br>　　　按照惯例，ECMAScript采用驼峰大小写格式，也就是第一个字母小写，剩下的每个单词首字母大写，如：firstSecond myCar<br>　　1.3 注释<br>　　　// 单行注释<br>　　　/* 这是一行多行注释 */<br>　　1.4 严格模式<br>　　　ECMAScript5引入严格模式，严格模式是为JavaScript定义了一种不同的解析与执行模型。要在整个模式启用严格模式，可以在顶部添加如下代码：<br>　　　　“use strict”<br>　　1.5 语句<br>　　　ECMAScript中的语句以一个分号结尾；虽然语句的分号不是必需的，但建议任何时候都不要省略它。<br>　<strong> 2. 数据类型 </strong><br>　　ECMAScript中有五种基本操作类型: Number、String、Bollean、Null、Undefined，还有一种复杂的数据类型Object。ECMAScript不支持任何创建自定义类型的机制，所有值最终将是上述6中类型之一。<br>　　　2.1 typeof操作符<br>　　　  使用typeof检测数据类型，使用typeof操作符返回下列某个字符串：<br>　　　   1. “undefined”: 如果这个值未定义；<br>　　　   2. “boolean”: 如果这个值是布尔值；<br>　　　   3. “string”: 如果这个值是字符串；<br>　　　   4. “number”: 如果这个值是数字；<br>　　　   5. “object”: 如果这个值是对象或者null；<br>　　　   6. “function”: 如果这个值是函数<br>　　　2.2 Undefined类型<br>　　　　 在使用var声明变量但未对其初始化时,这个变量的值就是undefined,例如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> message; <span class="comment">//只定义了变量，未初始化变量</span></span><br><span class="line">alert(message === <span class="literal">undefined</span>) <span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
 <p><strong> 注：</strong> <span style="color: #F56C6C">未声明的变量执行typeof也会返回undefined,初始化声明的变量是明智的选择。</span><br>　　　2.3 Null类型<br>　　　　Null类型是第二个只有一个值的数据类型，这个特殊值是null。从逻辑角度看，null表示一个空对象指针，而这也正是使用typeof操作符检测null值时返回”object”的原因。<br>　　　　实际上，undefined值是派生自null值的，因此ECMA-262规定对他们的相等性检测返回true<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="literal">null</span> == <span class="literal">undefined</span>) <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
 <p>　　　2.4 Bollean类型<br>　　　　该类型只有两个字面值：true和false<br>　　　2.5 Number类型<br>　　　　这种类型使用IEEE754格式来表示整数和浮点数组。<br>　　　　最基本的数值字面量格式是十进制整数。如 var intNum = 55; //整数<br>　　　　除十进制表示外，整数还有八进制和十六进制，其中八进制第一位必须是零，然后八进制数字序列(0~7),如果字面值中的数值超出了范围，那么前导零将被忽略，后面的数值当作十进制数值解析。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">　　　   <span class="keyword">var</span> octalNum1 = <span class="number">070</span>; <span class="comment">//八进制的56</span></span><br><span class="line">　　　   <span class="keyword">var</span> octalNum2 = <span class="number">079</span>; <span class="comment">//无效的八进制数值,解析为79</span></span><br><span class="line">　　　   <span class="keyword">var</span> octalNum3 = <span class="number">08</span>; <span class="comment">//无效的八进制数值，解析为8</span></span><br></pre></td></tr></table></figure></p>
 <p><strong> 注：</strong> <span style="color: #F56C6C">八进制字面量在严格模式下是无效的。</span><br>　　　   十六进制字面量的前两位必须是0x,后跟任何十六进制数字(0~9及A~F)。其中可以大写，也可以小写。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> hexNum1 = <span class="number">0xA</span>; <span class="comment">//十六进制的10</span></span><br><span class="line"><span class="keyword">var</span> hexNum2 = <span class="number">0x1f</span>; <span class="comment">//十六进制的31</span></span><br></pre></td></tr></table></figure></p>
@@ -604,9 +604,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/summarize/" rel="tag"># summarize</a>
-          
             <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+            <a href="/tags/summarize/" rel="tag"># summarize</a>
           
         </div>
       
@@ -814,7 +814,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">16.3k</span>
+    <span title="Site words total count">18.7k</span>
   
 </div>
 
