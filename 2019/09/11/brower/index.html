@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="-brower,">
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="时光不负有心人，星光不负赶路人">
-<meta property="og:type" content="website">
-<meta property="og:title" content="半先生的博客">
-<meta property="og:url" content="https://wuyounanhai55.github.io/index.html">
+<meta name="description" content="浏览器的基本工作原理 浏览器多进程架构 Chrome 由多进程(process)组成，每个进程都有自己核心职责，每个进程包含多个线程(thread)，一个进程内的多个线程之间也会协同工作，配合完成所在进程职责。 进程(process)和线程(thread) 进程就像有边界的生产车间，线程就像车间内的一个个员工，可以自己做自己的事情，也可以相互配合做同一件事情。当启动一个应用时，计算机会创建一个进程">
+<meta name="keywords" content="-brower">
+<meta property="og:type" content="article">
+<meta property="og:title" content="brower">
+<meta property="og:url" content="https://wuyounanhai55.github.io/2019/09/11/brower/index.html">
 <meta property="og:site_name" content="半先生的博客">
-<meta property="og:description" content="时光不负有心人，星光不负赶路人">
+<meta property="og:description" content="浏览器的基本工作原理 浏览器多进程架构 Chrome 由多进程(process)组成，每个进程都有自己核心职责，每个进程包含多个线程(thread)，一个进程内的多个线程之间也会协同工作，配合完成所在进程职责。 进程(process)和线程(thread) 进程就像有边界的生产车间，线程就像车间内的一个个员工，可以自己做自己的事情，也可以相互配合做同一件事情。当启动一个应用时，计算机会创建一个进程">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-16T05:45:23.331Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="半先生的博客">
-<meta name="twitter:description" content="时光不负有心人，星光不负赶路人">
+<meta name="twitter:title" content="brower">
+<meta name="twitter:description" content="浏览器的基本工作原理 浏览器多进程架构 Chrome 由多进程(process)组成，每个进程都有自己核心职责，每个进程包含多个线程(thread)，一个进程内的多个线程之间也会协同工作，配合完成所在进程职责。 进程(process)和线程(thread) 进程就像有边界的生产车间，线程就像车间内的一个个员工，可以自己做自己的事情，也可以相互配合做同一件事情。当启动一个应用时，计算机会创建一个进程">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://wuyounanhai55.github.io/">
+  <link rel="canonical" href="https://wuyounanhai55.github.io/2019/09/11/brower/">
 
 
 
 
 
-  <title>半先生的博客</title>
+  <title>brower | 半先生的博客</title>
   
 
 
@@ -153,8 +155,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/wuyounanhai55"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
@@ -280,9 +281,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -312,9 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/11/brower/" itemprop="url">brower</a></h1>
+          <h1 class="post-title" itemprop="name headline">brower</h1>
         
 
         <div class="post-meta">
@@ -416,18 +415,35 @@
       
 
       
-        
-          
-          浏览器的基本工作原理 浏览器多进程架构 Chrome 由多进程(process)组成，每个进程都有自己核心职责，每个进程包含多个线程(thread)，一个进程内的多个线程之间也会协同工作，配合完成所在进程职责。 进程(process)和线程(thread) 进程就像有边界的生产车间，线程就像车间内的
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/11/brower/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h5 id="浏览器的基本工作原理"><a href="#浏览器的基本工作原理" class="headerlink" title="浏览器的基本工作原理"></a>浏览器的基本工作原理</h5><p><strong> 浏览器多进程架构 </strong><br>Chrome 由多进程(process)组成，每个进程都有自己核心职责，每个进程包含多个线程(thread)，一个进程内的多个线程之间也会协同工作，配合完成所在进程职责。<br><strong> 进程(process)和线程(thread) </strong><br>进程就像有边界的生产车间，线程就像车间内的一个个员工，可以自己做自己的事情，也可以相互配合做<br>同一件事情。<br>当启动一个应用时，计算机会创建一个进程，操作系统会为进程分配一部分内存，应用所有<br>状态都会保存在这块内存中，应用也许还会创建多个线程来辅助工作，这些线程可以共享这部分内存中的<br>数据，应用关闭，进程终结，操作系统释放内存。<br>一个进程还可以要求操作系统生成另一个进程来执行不同任务，系统为新的进程分配独立内存，两个进程之间可以使用IPC(Inter Process Communication)进行通信。如果一个进程反应迟钝，重启这个进程不会影响其他进程工作。<br><a href="http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html" target="_blank" rel="noopener">点击查看更多关于进程和线程</a></p>
+<h5 id="浏览器的架构"><a href="#浏览器的架构" class="headerlink" title="浏览器的架构"></a>浏览器的架构</h5><p>它可以是单进程多线程的应用，也可以使用IPC通信的多进程应用，不同浏览器采用不同架构，并不存在标准模式，以Chrome为例：<br>Chorme采用多进程架构，顶层存在一个Browser process用以协调浏览器其他进程<br>具体Chrome的主要进程和职责如下：</p>
+<ul>
+<li>Browser Process<br>1 负责包括地址栏、书签栏，前进后退按钮等部分的工作<br>2 负责处理浏览器的一些不可见的底层操作，比如网络请求和文件访问</li>
+<li>Renderer Process<br>1 负责一个tab内关于网页呈现的所有事情</li>
+<li>Plugin Process<br>1 负责控制一个网页用到的所有插件，如flash</li>
+<li>GPU Process<br>1 负责GPU相关的任务</li>
+</ul>
+<p><strong> Chrome 多进程架构的优缺点 </strong><br>  <strong> 优点 </strong><br>  1 某一渲染进程出问题不会影响其他进程<br>  2 更为安全，在系统层面上限定了不同进程的权限</p>
+<p>  <strong> 缺点 </strong><br>  由于不同进程之间的内存不共享，不同进程的内存常常需要包含相同的内容<br>  为了节省内存，Chrome限制了最多进程数，最大进程数量由设备的内存和CPU能力决定，当达到这一限制时，新打开的Tab会共用之前同一站点的渲染进程<br>  Chrome把浏览器不同程序的功能，这些服务可以方便的分割为不同的进程或者合并为一个进程。以Browser Process为例，如果Chrome运行在强大的硬件上，它会分割不同的服务到不同的进程，这样Chrome整体运行更加稳定，如果Chrome运行在<br>  资源贫薄的设备上，这些服务又会合并到同一进程中运行，可以节省内存<br><strong> iframe的渲染 – Site Isolation </strong><br>Site Isolation机制从Chrome67开始默认启用，这种机制允许在同一个Tab下的跨站iframe使用单独进程来渲染，这样会更安全</p>
+<p><strong> 导航过程发生了什么 </strong><br>浏览器Tab外的工作主要由Browser Process掌控，Browser Process又对这些工作进一步划分，使用不同线程进行处理：</p>
+<ul>
+<li>UI thread: 控制浏览器的按钮及输入框；</li>
+<li>network thread: 处理网络请求，从网上获取数据；</li>
+<li>storage thread: 控制文件等的访问</li>
+</ul>
+<p>当我们在浏览器地址栏中输入文字，并点击回车获得页面内容的过程在浏览器看来可以分以下几步：<br><strong> 1 处理输入 </strong><br>UI thread 需要判断用户输入的是URL 还是 query;<br><strong> 2 开始导航 </strong><br>当用户点击回车键，UI thread 通知 netWork thread 获取网页内容，并控制tab上spinner展现，表示正在加载中<br>network thread 会执行DNS查询，随后为请求建立TLS连接<br>如果network thread接收到了重定向请求头如301，network thread会通知UI thread服务器要求重定向，之后另一个URL请求被触发。<br><strong> 3 读取响应 </strong><br>当请求响应返回的时候，network thread会依据Content-Type及MIME Type sniffing判断响应内容的格式，<br>如果响应格式是HTML，下一步将会把这些数据传递给renderer process，如果是zip文件或者是其他文件，会<br>把相关数据传输给下载管理器。<br>Safe Browsing检查也会在此时触发，如果域名或者请求内容匹配到已知恶意站点，network thread会展示一个警告页。<br>此外CORB检测也会触发确保敏感数据不会被传递渲染进程。<br><strong> 4 查找渲染进程 </strong><br>当上述所有检查完成，network thread 确信浏览器可以导航到请求网页，network thread会通知UI thread数据已经准备好，UI thread会查找下一个renderer process进行网页的渲染。</p>
+<blockquote>
+<p>由于网络请求获取响应需要时间，这里其实还存在着一个加速方案。当UI thread发生URL请求给network thread时，浏览器其实已经知道了将要导航到那个站点。UI thread会并行的预先查找和启动一个渲染进程，如果一切正常，当network thread<br>接收到数据时，渲染进程已经准备就绪了，但是如果遇到重定向，准备好的渲染进程也许就不可用了，这时候需要重启一个新的<br>渲染进程。</p>
+</blockquote>
+<p><strong> 5 确认导航 </strong><br>上述过程，数据和渲染进程都可用了，Browser Process会给renderer process发生IPC消息来确认导航，一旦Browser Process收到renderer process的渲染确认消息，导航过程结束，页面加载过程开始，此时，地址栏更新，展示新的页面信息<br>。history tab更新，可通过返回导航键来导航页面，为了关闭tab或者窗口后便于恢复，这些信息存放在硬盘中。</p>
+<p><strong> 6 额外的步骤 </strong><br>导航被确认，render process会使用相关的资源渲染页面，当render process渲染结束(渲染结束意味着该页面内所有页面，<br>包括iframe都出发onload时),会发送IPC信号到Browser Process, UI thread会停止展示tab里的spinner,上面流程只是<br>网页首帧渲染完成，客户端依旧可以下载额外资源渲染出新视图。<br>所有js代码其实都由render Process控制，所以当浏览网页内容的过程大部分时候不会涉及到其它进程。不过也许你曾经监听过beforeunload事件，这个事件再次涉及到Browser Process和renderer Process的交互，当当前页面关闭时(关闭Tab或者刷新等),Browser Process需要通知render process进行相关检查，对相关事件进行处理。<br>如果导航由 renderer process 触发（比如在用户点击某链接，或者JS执行 <code>window.location = &quot;http://newsite.com&quot;</code> ） renderer process 会首先检查是否有 <code>beforeunload</code> 事件处理器，导航请求由 renderer process 传递给 Browser process<br>如果导航到新的网站，会启用一个新的 render process 来处理新页面的渲染，老的进程会留下来处理类似 <code>unload</code> 等事件<br>除上述流程，有些页面还拥有Service Worker,Service Worker对本地缓存及判断何时从网络上获取信息有了更多控制权，如果service worker被设置为从本地cache中加载数据，那么就没有必要从网上获取更多数据了。<br>值得注意的是 service worker 也是运行在渲染进程中的 JS 代码，因此对于拥有 Service Worker 的页面，上述流程有些许的不同。<br>当有 Service Worker 被注册时，其作用域会被保存，当有导航时，network thread 会在注册过的 Service Worker 的作用域中检查相关域名，如果存在对应的 Service worker，UI thread 会找到一个 renderer process 来处理相关代码，Service Worker 可能会从 cache 中加载数据，从而终止对网络的请求，也可能从网上请求新的数据。<br>如果service worker 最终决定通过网上获取数据，Browser进程和render进程的交互其实会延后数据的请求时间。Navigation Preload是一种与Service Worker并行的加速加载资源机制，服务端通过请求头可以识别这类请求，做出响应的处理</p>
+<h5 id="渲染进程是如何工作的"><a href="#渲染进程是如何工作的" class="headerlink" title="渲染进程是如何工作的"></a>渲染进程是如何工作的</h5><p>渲染进程几乎负责Tab内的所有事情，渲染进程的核心目的在于转换HTML CSS JS为用户可交互的web页面。渲染进程包含以下线程:<br>1、主线程 Main thread<br>2、工作线程 Worker thread<br>3、排版线程 Compositor thread<br>4、光栅线程 Raster thread<br><strong> 渲染流程 </strong><br>1、构建DOM<br>当渲染进程接收到导航的确认信息，开始接受HTML数据时，主线程会解析文本字符串为DOM。<br>2、加载次级资源<br>网页中常常包含诸如图片、CSS、JS等额外的资源，这些资源需要从网络上或者cache中获取。主进程可以在构建DOM过程中会逐一请求它们，为了加速preload scanner 会同时运行，如果在html中存在<code>&lt;img&gt;</code>、<code>&lt;link&gt;</code>等标签,preload scanner会把这些请求传递给Browser Process中的network thread进行相关资源下载。<br>3、JS的下载与执行<br>当遇到<code>&lt;script&gt;</code>标签时，渲染进程会停止解析HTML,而去加载，解析和执行JS代码，停止解析HTML的原因在于JS可能改变DOM结构（使用诸如<code>document.write()</code>等API）。不过开发者其实也有多种方式来告知浏览器应对如何应对某个资源，比如说如果在<code>&lt;script&gt;</code> 标签上添加了 <code>async</code> 或 <code>defer</code> 等属性，浏览器会异步的加载和执行JS代码，而不会阻塞渲染。<br>4、样式计算<br>仅仅渲染DOM还不足以获知页面的具体样式，主进程还会基于CSS选择器解析CSS获取每一个节点的最终的计算样式值。即使不提供任何CSS,浏览器对每个元素也有一个默认的样式<br>5、获取布局<br>想渲染完整页面，除了获取每个节点样式，还需要获知每个节点在页面上的位置，布局就是找所有元素几何关系的过程。<br>通过遍历 DOM 及相关元素的计算样式，主线程会构建出包含每个元素的坐标信息及盒子大小的布局树。布局树和 DOM 树类似，但是其中只包含页面可见的元素，如果一个元素设置了 <code>display:none</code> ，这个元素不会出现在布局树上，伪元素虽然在 DOM 树上不可见，但是在布局树上是可见的。<br>6、绘制各元素<br>知道了不同元素的位置和样式信息，还需要知道不同元素绘制先后顺序。在绘制阶段，主线程会遍历布局树以创建绘制记录。绘制记录可以看作是记录各个元素绘制先后顺序的笔记。<br>7、合成帧<br>复合是一种分割页面为不同的层，并单独栅格化，随后组合为帧的技术。不同的层的组合由compositor线程（合成器线程）完成。<br>主线程会遍历布局树来创建层树（layer tree），添加了 <code>will-change</code> CSS 属性的元素，会被看做单独的一层，一旦层树被创建，渲染顺序被确定，主线程会把这些信息通知给合成器线程，合成器线程会栅格化每一层。有的层的可以达到整个页面的大小，因此，合成器线程将它们分成多个磁贴，并将每个磁贴发送到栅格线程，栅格线程会栅格化每一个磁贴并存储在 GPU 显存中。一旦磁贴被光栅化，合成器线程会收集称为绘制四边形的磁贴信息以创建合成帧。<br>合成帧随后会通过 IPC 消息传递给浏览器进程，由于浏览器的 UI 改变或者其它拓展的渲染进程也可以添加合成帧，这些合成帧会被传递给 GPU 用以展示在屏幕上，如果滚动发生，合成器线程会创建另一个合成帧发送给 GPU。<br>合成器的优点在于，其工作无关主线程，合成器线程不需要等待样式计算或者 JS 执行，这就是为什么合成器相关的动画 最流畅，如果某个动画涉及到布局或者绘制的调整，就会涉及到主线程的重新计算，自然会慢很多。</p>
+<h5 id="浏览器对事件的处理"><a href="#浏览器对事件的处理" class="headerlink" title="浏览器对事件的处理"></a>浏览器对事件的处理</h5><p>浏览器对不同事件处理来满足各种交互需求。<br>当用户在屏幕上触发诸如 touch 等手势时，首先收到手势信息的是 Browser process， 不过 Browser process 只会感知到在哪里发生了手势，对 tab 内内容的处理是还是由渲染进程控制的。<br>事件发生时，浏览器进程会发送事件类型及相应的坐标给渲染进程，渲染进程随后找到事件对象并执行所有绑定在其上的相关事件处理函数。</p>
+<p>我们提到过合成器可以独立于主线程之外通过合成栅格化层平滑的处理滚动。如果页面中没有绑定相关事件，组合器线程可以独立于主线程创建组合帧。如果页面绑定了相关事件处理器，主线程就不得不出来工作了。这时候合成器线程会怎么处理呢？<br>这里涉及到一个专业名词「理解非快速滚动区域（non-fast scrollable region）」由于执行 JS 是主线程的工作，当页面合成时，合成器线程会标记页面中绑定有事件处理器的区域为 non-fast scrollable region ，如果存在这个标注，合成器线程会把发生在此处的事件发送给主线程，如果事件不是发生在这些区域，合成器线程则会直接合成新的帧而不用等到主线程的响应。<br>web 开发中常用的事件处理模式是事件委托，基于事件冒泡，我们常常在最顶层绑定事件：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.body.addEventListener(<span class="string">'touchstart'</span>, event =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (event.target === area) &#123;</span><br><span class="line">    event.preventDefault()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>上述做法很常见，但是如果从浏览器的角度看，整个页面都成了 non-fast scrollable region 了。<br>这意味着即使操作的是页面无绑定事件处理器的区域，每次输入时，合成器线程也需要和主线程通信并等待反馈，流畅的合成器独立处理合成帧的模式就失效了。<br>为防止这种情况，可以为事件处理器传递<code>passive:true</code>，做为参数，这样就能让浏览器即监听相关事件，又让组合器线程在等待主线程响应前构建新的组合帧。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.body.addEventListener(<span class="string">'touchstart'</span>,  event =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (event.target === area) &#123;</span><br><span class="line">      event.preventDefault()</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;, &#123;<span class="attr">passive</span>: <span class="literal">true</span>&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>上述写法可能又会带来另外一个问题，假设某个区域你只想要水平滚动，使用 <code>passive: true</code> 可以实现平滑滚动，但是垂直方向的滚动可能会先于<code>event.preventDefault()</code>发生，此时可以通过 <code>event.cancelable</code> 来防止这种情况.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.body.addEventListener(<span class="string">'pointermove'</span>, event =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (event.cancelable) &#123;</span><br><span class="line">        event.preventDefault(); <span class="comment">// block the native scroll</span></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        *  do what you want the application to do here</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">    &#125; </span><br><span class="line">&#125;, &#123;<span class="attr">passive</span>: <span class="literal">true</span>&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>可以使用css属性 <code>touch-action</code> 来完全消除事件处理器的影响，如：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#area</span> &#123;</span><br><span class="line">  <span class="attribute">touch-action</span>: pan-x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -435,386 +451,99 @@
     
 
     
+      <div>
+      
+<div style="text-align:center;color: #ccc;font-size:14px;">
+  ------ 本文结束<i class="fa fa-heart"></i>感谢您的阅读 ------</div>
 
+      </div>
     
 
     
 
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>在这里希望你遇见了更好的自己</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="半先生 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="半先生 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    半先生
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://wuyounanhai55.github.io/2019/09/11/brower/" title="brower">https://wuyounanhai55.github.io/2019/09/11/brower/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wuyounanhai55.github.io/2019/09/09/Promise-interview/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="半先生">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="半先生的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/09/Promise-interview/" itemprop="url">Promise-interview</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-09T11:02:06+08:00">
-                2019-09-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/brower/" rel="tag"># -brower</a>
           
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/09/09/Promise-interview/" class="leancloud_visitors" data-flag-title="Promise-interview">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  229
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          Promise总结 Promise的三种状态 1 Pending2 Fulfilled3 Rejected一旦Promise被resolve 或 reject,则状态就不会再更改 基本过程 1 初始化Promise状态（Pending）2 执行then(..)注册回调处理数组(then方法可被同一个
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/09/Promise-interview/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/09/Promise-interview/" rel="next" title="Promise-interview">
+                <i class="fa fa-chevron-left"></i> Promise-interview
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wuyounanhai55.github.io/2019/06/24/js-summarize3/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="半先生">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="半先生的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/24/js-summarize3/" itemprop="url">js-summarize3</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-24T11:09:22+08:00">
-                2019-06-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/06/24/js-summarize3/" class="leancloud_visitors" data-flag-title="js-summarize3">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  2.5k
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          
-
-夯实基础，从敲代码开始。 第13章 事件  
-13.1 事件流　 13.1.1 事件冒泡 　IE的事件流叫事件冒泡(event bubbling),即事件最开始是由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐渐向上传播到较为不具体的节点。　 13.1.2 事件捕获 　Netscape
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/06/24/js-summarize3/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -824,743 +553,27 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wuyounanhai55.github.io/2019/02/22/InterView/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="半先生">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="半先生的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/22/InterView/" itemprop="url">InterView</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-22T10:25:04+08:00">
-                2019-02-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/02/22/InterView/" class="leancloud_visitors" data-flag-title="InterView">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1k
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          函数节流(throttle)和防抖(debounce)1.函数防抖
-
-触发高频事件后n秒内函数只执行一次，如果n秒内高频事件再次触发，则重新计算触发时间。
-
-2.函数节流
-
-高频事件触发,但在n秒内只会执行一次，所以节流会稀释函数的执行频率。
-
-123456789101112131415161718
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/02/22/InterView/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wuyounanhai55.github.io/2019/01/02/js-summarize2/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="半先生">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="半先生的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/02/js-summarize2/" itemprop="url">js-summarize2</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-02T16:56:45+08:00">
-                2019-01-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/01/02/js-summarize2/" class="leancloud_visitors" data-flag-title="js-summarize2">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  6.2k
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-
-写在前面：本文是JavaScript高级程序设计内容的总结汇总，便于备忘，用于提升！第6章 面向对象程序设计　 6.1 理解对象 　创建一个对象最简单的办法就是创建一个Object实例，然后再为它添加属性和方法。例：1234567891011121314151617var person = ne
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/01/02/js-summarize2/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
           </div>
-          <!--/noindex-->
-        
-      
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTU4OS8xODEzNg=="></div>
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
-  
-  
-  
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wuyounanhai55.github.io/2018/12/18/js-summarize/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="半先生">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="半先生的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/18/js-summarize/" itemprop="url">js-summarize</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-18T11:26:43+08:00">
-                2018-12-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/12/18/js-summarize/" class="leancloud_visitors" data-flag-title="js-summarize">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  13.7k
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <img src="/2018/12/18/js-summarize/javascript.jpg">
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/12/18/js-summarize/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wuyounanhai55.github.io/2018/12/13/css-summarize/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="半先生">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="半先生的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/13/css-summarize/" itemprop="url">css-summarize</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-13T11:39:19+08:00">
-                2018-12-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/12/13/css-summarize/" class="leancloud_visitors" data-flag-title="css-summarize">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1k
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <img src="/2018/12/13/css-summarize/css-summarize.png">
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/12/13/css-summarize/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
 
         </div>
         
@@ -1581,8 +594,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -1654,6 +676,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#浏览器的基本工作原理"><span class="nav-number">1.</span> <span class="nav-text">浏览器的基本工作原理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#浏览器的架构"><span class="nav-number">2.</span> <span class="nav-text">浏览器的架构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#渲染进程是如何工作的"><span class="nav-number">3.</span> <span class="nav-text">渲染进程是如何工作的</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#浏览器对事件的处理"><span class="nav-number">4.</span> <span class="nav-text">浏览器对事件的处理</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1810,6 +848,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1838,6 +880,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

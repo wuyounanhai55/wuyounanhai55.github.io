@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="javascript,summarize,">
+  <meta name="keywords" content="summarize,javascript,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="keywords" content="javascript,summarize">
+<meta name="description" content="写在前面：本文是JavaScript高级程序设计内容的总结汇总，便于备忘，用于提升！第6章 面向对象程序设计　 6.1 理解对象 　创建一个对象最简单的办法就是创建一个Object实例，然后再为它添加属性和方法。例：1234567891011121314151617var person = new Object();person.name = &quot;Nicholas&quot;;person.age = 2">
+<meta name="keywords" content="summarize,javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js-summarize2">
 <meta property="og:url" content="https://wuyounanhai55.github.io/2019/01/02/js-summarize2/index.html">
 <meta property="og:site_name" content="半先生的博客">
+<meta property="og:description" content="写在前面：本文是JavaScript高级程序设计内容的总结汇总，便于备忘，用于提升！第6章 面向对象程序设计　 6.1 理解对象 　创建一个对象最简单的办法就是创建一个Object实例，然后再为它添加属性和方法。例：1234567891011121314151617var person = new Object();person.name = &quot;Nicholas&quot;;person.age = 2">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://wuyounanhai55.github.io/2019/01/02/js-summarize2/javascript.jpg">
-<meta property="og:updated_time" content="2019-01-17T09:35:18.000Z">
+<meta property="og:updated_time" content="2019-06-24T03:13:27.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js-summarize2">
-<meta name="twitter:image" content="https://wuyounanhai55.github.io/2019/01/02/js-summarize2/javascript.jpg">
+<meta name="twitter:description" content="写在前面：本文是JavaScript高级程序设计内容的总结汇总，便于备忘，用于提升！第6章 面向对象程序设计　 6.1 理解对象 　创建一个对象最简单的办法就是创建一个Object实例，然后再为它添加属性和方法。例：1234567891011121314151617var person = new Object();person.name = &quot;Nicholas&quot;;person.age = 2">
 
 
 
@@ -389,7 +390,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  5.4k
+                  6.2k
                 </span>
               
 
@@ -414,9 +415,9 @@
       
 
       
-        <img src="/2019/01/02/js-summarize2/javascript.jpg">
+        
 <a id="more"></a>
-<h5 id="写在前面：本文是JavaScript高级程序设计内容的第六到十一章的总结汇总，便于备忘，用于提升！"><a href="#写在前面：本文是JavaScript高级程序设计内容的第六到十一章的总结汇总，便于备忘，用于提升！" class="headerlink" title="写在前面：本文是JavaScript高级程序设计内容的第六到十一章的总结汇总，便于备忘，用于提升！"></a>写在前面：本文是JavaScript高级程序设计内容的第六到十一章的总结汇总，便于备忘，用于提升！</h5><h5 id="第6章-面向对象程序设计"><a href="#第6章-面向对象程序设计" class="headerlink" title="第6章 面向对象程序设计"></a>第6章 面向对象程序设计</h5><p>　<strong> 6.1 理解对象 </strong><br>　创建一个对象最简单的办法就是创建一个Object实例，然后再为它添加属性和方法。例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">person.name = <span class="string">"Nicholas"</span>;</span><br><span class="line">person.age = <span class="number">29</span>;</span><br><span class="line">person.job = <span class="string">"Software Enginner"</span>;</span><br><span class="line">person.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  alert(<span class="keyword">this</span>.name)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//对象字面量写法：</span></span><br><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">  name: <span class="string">"Nicholas"</span>,</span><br><span class="line">  age: <span class="number">29</span>,</span><br><span class="line">  job: <span class="string">"Software Enginner"</span>,</span><br><span class="line">  sayName: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="keyword">this</span>.name)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="写在前面：本文是JavaScript高级程序设计内容的总结汇总，便于备忘，用于提升！"><a href="#写在前面：本文是JavaScript高级程序设计内容的总结汇总，便于备忘，用于提升！" class="headerlink" title="写在前面：本文是JavaScript高级程序设计内容的总结汇总，便于备忘，用于提升！"></a>写在前面：本文是JavaScript高级程序设计内容的总结汇总，便于备忘，用于提升！</h5><h5 id="第6章-面向对象程序设计"><a href="#第6章-面向对象程序设计" class="headerlink" title="第6章 面向对象程序设计"></a>第6章 面向对象程序设计</h5><p>　<strong> 6.1 理解对象 </strong><br>　创建一个对象最简单的办法就是创建一个Object实例，然后再为它添加属性和方法。例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">person.name = <span class="string">"Nicholas"</span>;</span><br><span class="line">person.age = <span class="number">29</span>;</span><br><span class="line">person.job = <span class="string">"Software Enginner"</span>;</span><br><span class="line">person.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  alert(<span class="keyword">this</span>.name)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//对象字面量写法：</span></span><br><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">  name: <span class="string">"Nicholas"</span>,</span><br><span class="line">  age: <span class="number">29</span>,</span><br><span class="line">  job: <span class="string">"Software Enginner"</span>,</span><br><span class="line">  sayName: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="keyword">this</span>.name)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>　6.1.1 属性类型<br>　ECMAScript中有两种属性：数据属性和访问器属性。<br>　1 数据属性<br>　数据属性包含一个数据值的位置。在这个位置可以读取和写入值。<br>　[[Configurable]]: 表示能否通过delete删除属性从而重新定义属性，能否修改属性的特性，或者能否把属性修改为访问器属性。默认值为true。<br>　[[Enumerable]]: 表示能否通过for-in循环返回属性。默认值为true。<br>　[[Writable]]: 表示能否修改属性的值。默认值为true。<br>　[[Value]]: 包含这个属性的数据值。这个特性的默认值是undefined。<br>　要修改属性默认特性，必须使用ECMAScript5的Object.defineProperty()方法。方法接收三个参数：属性所在对象、属性名和一个描述符对象。其中，描述符对象必须是：configurable、enumerable、writeable和value。设置其中一或多个值，可以修改对应的特性值。例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;&#125;;</span><br><span class="line"><span class="built_in">Object</span>.defineProperty(person, <span class="string">"name"</span>, &#123;</span><br><span class="line">  writable: <span class="literal">false</span>,</span><br><span class="line">  value: <span class="string">"Nicholas"</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">alert(person.name);      <span class="comment">//"Nicholas"</span></span><br><span class="line">person.name = <span class="string">"Greg"</span>;</span><br><span class="line">alert(person.name);      <span class="comment">//"Nicholas"</span></span><br></pre></td></tr></table></figure></p>
 <p>　2 访问器属性<br>　[[Configurable]]: 同上。<br>　[[Enumerable]]: 同上。<br>　[[Get]]: 在读取属性时调用的函数。默认值undefined。<br>　[[Set]]: 在写入属性时调用的函数。默认值undefined。<br>　访问器属性不能直接定义，必须使用ECMAScript5的Object.defineProperty()定义。例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> book = &#123;</span><br><span class="line">  _year: <span class="number">2004</span>,</span><br><span class="line">  edition: <span class="number">1</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">Object</span>.defineProperty(book, <span class="string">"year"</span>, &#123;</span><br><span class="line">　get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  　<span class="keyword">return</span> <span class="keyword">this</span>._year</span><br><span class="line">　&#125;,</span><br><span class="line">　set: <span class="function"><span class="keyword">function</span>(<span class="params">newValue</span>)</span>&#123;</span><br><span class="line">  　<span class="keyword">if</span> (newValue &gt; <span class="number">2004</span>) &#123;</span><br><span class="line">　　　<span class="keyword">this</span>._year = newValue;</span><br><span class="line">　　　<span class="keyword">this</span>.edition += newValue - <span class="number">2004</span>;</span><br><span class="line">    &#125;</span><br><span class="line">　&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">book.year = <span class="number">2005</span>;</span><br><span class="line">alert(book.edition);       <span class="comment">//2</span></span><br></pre></td></tr></table></figure></p>
 <p>　6.1.2 定义多个属性<br>　ECMAScript又定义了一个Object.defineProperties()方法。利用这个方法可以通过描述符一次定义多个属性。这个方法接收两个参数：第一个对象是要添加和修改其属性的对象。第二个对象的属性与第一个对象中要添加或修改的属性一一对应。例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> book = &#123;&#125;;</span><br><span class="line"><span class="built_in">Object</span>.defineProperties(book, &#123;</span><br><span class="line">  _year: &#123;</span><br><span class="line">    value: <span class="number">2004</span></span><br><span class="line">  &#125;,</span><br><span class="line">  edition: &#123;</span><br><span class="line">    value: <span class="number">1</span></span><br><span class="line">  &#125;,</span><br><span class="line">  year: &#123;</span><br><span class="line">    get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>._year;</span><br><span class="line">    &#125;,</span><br><span class="line">    set: <span class="function"><span class="keyword">function</span>(<span class="params">newValue</span>)</span>&#123;</span><br><span class="line">      <span class="keyword">if</span> (newValue &gt; <span class="number">2004</span>) &#123;</span><br><span class="line">        <span class="keyword">this</span>._year = newValue;</span><br><span class="line">        <span class="keyword">this</span>.edition += newValue - <span class="number">2004</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
@@ -453,7 +454,60 @@
 <h5 id="第8章-BOM"><a href="#第8章-BOM" class="headerlink" title="第8章 BOM"></a>第8章 BOM</h5><p>ECMAscript是JavaScript的核心，但是要在Web中使用Javascript，那么BOM(浏览器对象模型)则无疑是真正的核心。<br>　8.1 window对象<br>　BOM的核心对象是window，它表示浏览器的一个实例，在浏览器中，window对象即是通过JavaScript访问浏览器窗口的一个接口，又是ECMAscript规定的Global对象。<br>　8.1.1 全局作用域<br>　window对象同时扮演着ECMAscript中Global对象的角色，因此所有在全局作用域中声明的变量、函数都会变成window对象的属性和方法。例:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age = <span class="number">29</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayAge</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  alert(<span class="keyword">this</span>.age);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">alert(<span class="built_in">window</span>.age);   <span class="comment">//29</span></span><br><span class="line">sayAge();            <span class="comment">//29</span></span><br><span class="line"><span class="built_in">window</span>.sayAge();     <span class="comment">//29</span></span><br><span class="line"><span class="comment">//在全局作用域中定义的变量age和函数sayAge()，它们自动归在了window对象名下。由于sayAge()存在于全局作用域中，因此this.age别映射到window.age。</span></span><br></pre></td></tr></table></figure></p>
 <p>　定义在全局变量和直接定义在window对象上的属性还是有一点差别：全局变量不能通过delete操作符删除，而直接在window对象上定义的属性可。例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age = <span class="number">29</span>;</span><br><span class="line"><span class="built_in">window</span>.color = <span class="string">"red"</span>;</span><br><span class="line"><span class="comment">//在IE &lt; 9 时抛出错误，在其他浏览器都返回false</span></span><br><span class="line"><span class="keyword">delete</span> <span class="built_in">window</span>.age   </span><br><span class="line"><span class="comment">//在IE &lt; 9 时抛出错误，在其他浏览器都返回true</span></span><br><span class="line"><span class="keyword">delete</span> <span class="built_in">window</span>.color</span><br><span class="line"></span><br><span class="line">alert(<span class="built_in">window</span>.age);           <span class="comment">//29</span></span><br><span class="line">alert(<span class="built_in">window</span>.color);         <span class="comment">//undefined</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*使用var语句添加的window属性有一个名为[[Configurable]]的特性，这个特性的值被设置为false,因此这样定义的属性不可以通过delete操作符删除。</span></span><br><span class="line"><span class="comment">IE8及更早版本使用delete删除window属性的语句时，不管如何创建都会抛出错误。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></p>
 <p>另外尝试访问未声明的变量会抛出错误，但通过查询window对象，可以知道某个可能未声明的变量是否存在。例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> newValue = oldValue;   <span class="comment">//报错，因为oldValue未定义</span></span><br><span class="line"><span class="keyword">var</span> newValue = <span class="built_in">window</span>.oldValue;      <span class="comment">//不报错，因为这是一次查询</span></span><br></pre></td></tr></table></figure></p>
-<p>　8.1.2 窗口关系及框架</p>
+<p>　8.1.3 窗口位置<br>　用来确定和修改window对象位置的属性和方法有很多。IE、Safari、Opera 和 Chrome都提供了screenLeft 和 screenTop属性，分别表示窗口相对于屏幕左边和上边的位置。Firefox则在screenX和screenY属性中提供相同的窗口位置信息，Safari和Chrome也同时支持这两个属性。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//下面代码可以跨浏览器获取窗口上边和左边的位置</span></span><br><span class="line"><span class="keyword">var</span> leftPos = (<span class="keyword">typeof</span> <span class="built_in">window</span>.screenLeft === <span class="string">'number'</span>) ? </span><br><span class="line"><span class="built_in">window</span>.screenLeft : <span class="built_in">window</span>.screenX</span><br><span class="line"><span class="keyword">var</span> topPos = (<span class="keyword">typeof</span> <span class="built_in">window</span>.screenTop === <span class="string">'number'</span>) ? </span><br><span class="line"><span class="built_in">window</span>.screenTop : <span class="built_in">window</span>.screenY</span><br></pre></td></tr></table></figure></p>
+<p><strong> 注：</strong>Firefox、Safari 和 Chrome 始终返回页面中每个框架的 top.screenX 和<br>top.screenY 值。即使在页面由于被设置了外边距而发生偏移的情况下，相对于 window 对象使用<br>screenX 和 screenY 每次也都会返回相同的值。而 IE 和 Opera 则会给出框架相对于屏幕边界的精确坐<br>标值。最终结果，就是无法在跨浏览器的条件下取得窗口左边和上边的精确坐标值。<br>　8.1.4 窗口大小<br>　IE9+、Firefox、Safari、Opera 和 Chrome 均为此提供了 4 个属性：innerWidth、innerHeight、outerWidth 和 outerHeight。在 IE9+、Safari 和 Firefox中，outerWidth 和 outerHeight 返回浏览器窗口本身的尺寸（无论是从最外层的 window 对象还是从某个框架访问）。在 Opera中，这两个属性的值表示页面视图容器的大小。而 innerWidth 和 innerHeight则表示该容器中页面视图区的大小（减去边框宽度）。在 Chrome 中，outerWidth、outerHeight 与innerWidth、innerHeight 返回相同的值，即视口（viewport）大小而非浏览器窗口大小。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取浏览器视口</span></span><br><span class="line"><span class="keyword">var</span> pageWidth = <span class="built_in">window</span>.innerWidth;</span><br><span class="line"><span class="keyword">var</span> pageHeight = <span class="built_in">window</span>.innerHeight;</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">typeof</span> pageWidth !== <span class="string">'number'</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">document</span>.compatMode == <span class="string">"CSS1Compat"</span>) &#123;</span><br><span class="line">    pageWidth = <span class="built_in">document</span>.documentElement.clientWidth;</span><br><span class="line">    pageHeight = <span class="built_in">document</span>.documentElement.clientHeight;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    pageWidth = <span class="built_in">document</span>.body.clientWidth;</span><br><span class="line">    pageHeight = <span class="built_in">document</span>.body.clientHeight;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>　8.1.5 导航和打开窗口<br>　window.open(),接受四个参数：要加载的URl、窗口目标、一个特性字符串以及一个表示新页面是否取代浏览器历史记录中当前加载页面的布尔值<br>　8.2 location对象<br>　location 对象是很特别的一个对象，因为它既是 window 对象的属性，也是document 对象的属性；换句话说，window.location 和 document.location 引用的是同一个对象。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.location === <span class="built_in">document</span>.location   <span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>例子</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hash</td>
+<td>“#contents”</td>
+<td>返回URL中的hash（#号后跟零或多个字符），如果中不包含散列，则返回空字符串</td>
+</tr>
+<tr>
+<td>host</td>
+<td>“<a href="http://www.wrox.com:80&quot;" target="_blank" rel="noopener">www.wrox.com:80&quot;</a></td>
+<td>返回服务器名称和端口号（如果有）</td>
+</tr>
+<tr>
+<td>hostname</td>
+<td>“<a href="http://www.wrox.com&quot;" target="_blank" rel="noopener">www.wrox.com&quot;</a></td>
+<td>返回不带端口号的服务器名称</td>
+</tr>
+<tr>
+<td>href</td>
+<td>“http:/<a href="http://www.wrox.com&quot;" target="_blank" rel="noopener">www.wrox.com&quot;</a></td>
+<td>返回当前加载页面的完整URL。而location对toString()方法也返回这个值</td>
+</tr>
+<tr>
+<td>pathname</td>
+<td>“/WileyCDA/“</td>
+<td>返回URL中的目录和（或）文件名</td>
+</tr>
+<tr>
+<td>port</td>
+<td>“8080”</td>
+<td>返回URL中指定的端口号。如果URL中不包含端口这个属性返回空字符串</td>
+</tr>
+<tr>
+<td>protocol</td>
+<td>“http:”</td>
+<td>返回页面使用的协议。通常是http:或https:</td>
+</tr>
+<tr>
+<td>search</td>
+<td>“?q=javascript”</td>
+<td>返回URL的查询字符串。这个字符串以问号开头</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -527,9 +581,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javascript/" rel="tag"># javascript</a>
-          
             <a href="/tags/summarize/" rel="tag"># summarize</a>
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
           
         </div>
       
@@ -638,7 +692,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -649,7 +703,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -660,7 +714,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -703,7 +757,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#写在前面：本文是JavaScript高级程序设计内容的第六到十一章的总结汇总，便于备忘，用于提升！"><span class="nav-number">1.</span> <span class="nav-text">写在前面：本文是JavaScript高级程序设计内容的第六到十一章的总结汇总，便于备忘，用于提升！</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第6章-面向对象程序设计"><span class="nav-number">2.</span> <span class="nav-text">第6章 面向对象程序设计</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第7章-函数表达式"><span class="nav-number">3.</span> <span class="nav-text">第7章 函数表达式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第8章-BOM"><span class="nav-number">4.</span> <span class="nav-text">第8章 BOM</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#写在前面：本文是JavaScript高级程序设计内容的总结汇总，便于备忘，用于提升！"><span class="nav-number">1.</span> <span class="nav-text">写在前面：本文是JavaScript高级程序设计内容的总结汇总，便于备忘，用于提升！</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第6章-面向对象程序设计"><span class="nav-number">2.</span> <span class="nav-text">第6章 面向对象程序设计</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第7章-函数表达式"><span class="nav-number">3.</span> <span class="nav-text">第7章 函数表达式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第8章-BOM"><span class="nav-number">4.</span> <span class="nav-text">第8章 BOM</span></a></li></ol></div>
             
 
           </div>
@@ -737,7 +791,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">21.2k</span>
+    <span title="Site words total count">28.6k</span>
   
 </div>
 
